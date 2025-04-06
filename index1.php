@@ -394,34 +394,23 @@ button {
     </header>
 
     <div class="main-container">
-    <div class="navcontainer">  <!-- Убрали класс navclose -->
-    <nav class="nav">
-    <div class="nav-upper-options">
-
-    <div class="nav-option option1">              
-        <h3><a href="index.php">Главная</a></h3>
-    </div>
-
-    <div class="nav-option option2" id="ecoanalyze">
-        <h3><a href="admin1.php">Заседания</a></h3>
-    </div>
-    <div class="nav-option option5">
-        <h3><a href="admin2.php">Жильцы</a></h3>
-    </div>
-    <div class="nav-option option3">
-        <h3><a href="admin3.php">Штрафы и нарушения</a></h3>
-    </div>
-    <div class="nav-option option3">
-        <h3><a href="admin4.php">Админы</a></h3>
-    </div>
-    <div class="nav-option option3">
-        <h3><a href="admin5.php">Интеграция с системами</a></h3>
-    </div>
-    <div class="nav-option logout">
-        <form action="logout.php" method="post">
-            <button type="submit" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; width: 100%;">
-                <h3 style="margin-left: 10px;">Выход</h3>
-            </button>
+    <div class="navcontainer">  
+        <nav class="nav">
+            <div class="nav-upper-options">
+                <div class="nav-option option1">              
+                    <h3><a href="index1.php">Главная</a></h3>
+                </div>
+                <div class="nav-option option2" id="ecoanalyze">
+                    <h3><a href="admin1.php">Заседания</a></h3>
+                </div>
+                <div class="nav-option option5">
+                    <h3><a href="admin2.php">Опросы</a></h3>
+                </div>
+                <div class="nav-option logout">
+                    <form action="logout.php" method="post">
+                        <button type="submit" style="background: none; border: none; cursor: pointer; display: flex; align-items: center; width: 100%;">
+                            <h3 style="margin-left: 10px;">Выход</h3>
+                        </button>
         </form>
     </div>
 </div>

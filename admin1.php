@@ -332,16 +332,7 @@ button {
                     <h3><a href="admin1.php">Заседания</a></h3>
                 </div>
                 <div class="nav-option option5">
-                    <h3><a href="admin2.php">Жильцы</a></h3>
-                </div>
-                <div class="nav-option option3">
-                    <h3><a href="admin3.php">Штрафы и нарушения</a></h3>
-                </div>
-                <div class="nav-option option3">
-                    <h3><a href="admin4.php">Админы</a></h3>
-                </div>
-                <div class="nav-option option3">
-                    <h3><a href="admin5.php">Интеграция с системами</a></h3>
+                    <h3><a href="admin2.php">Опросы</a></h3>
                 </div>
                 <div class="nav-option logout">
                     <form action="logout.php" method="post">
