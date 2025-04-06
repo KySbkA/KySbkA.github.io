@@ -38,6 +38,60 @@
             align-items: center;
         }
 
+/* Цвет выделения для всех опций навигации */
+:root {
+    --highlight-color: #6aae95; /* Серый цвет для выделения */
+}
+
+/* Стили для опции "Заседания" */
+#ecoanalyze {
+    border-left: 5px solid var(--highlight-color); /* Левый бордер */
+    background-color: var(--highlight-color); /* Серый фон */
+    color: black; /* Черный текст */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+/* Эффект при наведении на опцию "Заседания" */
+#ecoanalyze:hover {
+    background-color: #b2b2b2; /* Более светлый серый фон при наведении */
+}
+
+/* Стили для опций навигации */
+.nav-option {
+    width: 250px; /* Ширина опции */
+    height: 60px; /* Высота опции */
+    display: flex; /* Использование flexbox */
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 0 20px; /* Отступы */
+    gap: 20px; /* Промежуток между элементами */
+    transition: all 0.1s ease-in-out; /* Плавный переход */
+}
+
+/* Эффект при наведении на опции навигации */
+.nav-option:hover {
+    border-left: 5px solid var(--highlight-color); /* Левый бордер при наведении */
+    background-color: rgba(162, 162, 162, 0.5); /* Полупрозрачный серый фон при наведении */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+/* Кнопка выхода */
+.logout button {
+    display: flex; /* Использование flexbox */
+    align-items: center; /* Выравнивание по вертикали */
+    width: 100%; /* Ширина на всю ширину контейнера */
+    padding: 10px; /* Внутренние отступы */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Указатель при наведении */
+    color: black; /* Цвет текста кнопки выхода */
+}
+
+/* Эффект при наведении на кнопку выхода */
+.logout button:hover {
+    background-color: rgba(162, 162, 162, 0.5); /* Полупрозрачный серый фон при наведении */
+}
+
+
         .LLogo {
             height: 70px;
             width: 170px;
@@ -68,6 +122,20 @@
     transition: all 0.5s ease-in-out; /* Плавный переход */
 }
 
+/* Стили для опции "Заседания" */
+#ecoanalyze {
+    border-left: 5px solid #6aae95; /* Левый бордер */
+    background-color: #1a315e; /* Синий фон */
+    color: white; /* Белый текст */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+/* Эффект при наведении на опцию "Заседания" */
+#ecoanalyze:hover {
+    border-left: 5px solid #6aae95; /* Левый бордер при наведении */
+    background-color: #2a4a8a; /* Более светлый синий фон при наведении */
+}
+
 /* Стили для скрытия полосы прокрутки */
 .navcontainer::-webkit-scrollbar {
     display: none; /* Скрыть полосу прокрутки */
@@ -92,8 +160,8 @@
 
 /* Эффект при наведении на опции навигации */
 .nav-option:hover {
-    border-left: 5px solid #a2a2a2; /* Левый бордер при наведении */
-    background-color: #dadada; /* Фон при наведении */
+    border-left: 5px solidrgb(71, 84, 110); /* Левый бордер при наведении */
+    background-color:( #6aae95); /* Фон при наведении */
     cursor: pointer; /* Указатель при наведении */
 }
 
@@ -136,16 +204,16 @@
 
 /* Стили для первой опции навигации */
 .option1 {
-    border-left: 5px solid #6aae95; /* Левый бордер */
-    background-color: #1a315e; /* Фон */
-    color: white; /* Цвет текста */
+    border-left: 5px solidrgb(255, 255, 255); /* Левый бордер */
+    background-color:rgb(255, 255, 255); /* Фон */
+    color: black; /* Цвет текста */
     cursor: pointer; /* Указатель при наведении */
 }
 
 /* Эффект при наведении на первую опцию */
 .option1:hover {
     border-left: 5px solid #6aae95; /* Левый бордер при наведении */
-    background-color:rgb(30, 65, 135); /* Фон при наведении */
+    background-color:rgb(204, 203, 203); /* Фон при наведении */
 }
 
 

@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
    
         
         * {
-            margin: 0;
+            margin: 0;0
             padding: 0;
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
@@ -139,7 +139,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
     display: none;
 }
 
+.message {
+    gap: 40px;
+    position: relative;
+    cursor: pointer;
+}
 
+
+.dp {
+    height: 40px;
+    width: 40px;
+    background-color: #626262;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 .main-container {
             display: flex; /* Используем Flexbox для расположения элементов */
             width: 100vw;
@@ -265,7 +281,13 @@ button {
 
 <header>
     <img src="1540771.png" class="LLogo">
-   
+    <div class="message">
+        <div class="circle"></div>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icn" alt="">
+        <div class="dp">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png" class="dpicn" alt="dp">
+        </div>
+    </div>
 </header>
 
 <div class="main-container">
@@ -281,33 +303,29 @@ button {
             <input type="text" name="inn" placeholder="ИНН" required>
             <input type="password" name="password" placeholder="Пароль" required>
             <input type="submit" name="login" value="Войти">
+            <p style="text-align: center; margin: 10px 0;">или</p> <!-- Текст между кнопками -->
+            <input type="submit" name="login" value="Войти через госуслуги">
         </form>
     </div>
 </div>
 
+
 <div id="registrationModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
+        <h2>Зарегистрироваться</h2>
         <form id="registrationForm" action="" method="POST">
-            <label for="full_name">ФИО:</label><br>
-            <input type="text" id="full_name" name="full_name" required><br><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="inn">ИНН:</label><br>
-            <input type="text" id="inn" name="inn" required><br><br>
-            
-            <label for="password">Пароль:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            
+            <input type="text" id="full_name" name="full_name" placeholder="фио" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Почта" required><br><br>
+            <input type="text" id="inn" name="inn" placeholder="ИНН" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Пароль" required><br><br>
             <input type="submit" name="register" value="Зарегистрироваться">
         </form>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2023 Ваша Компания. Все права защищены.</p>
+    <p>&copy; 2025 Ваша Компания. Все права защищены.</p>
 </footer>
 
 <script>
